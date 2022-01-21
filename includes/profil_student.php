@@ -68,7 +68,6 @@ $student_info = student::find_student_by_id($get_the_id);
 					<ul class="nav nav-tabs nav-tabs-bottom">
 						<li class="nav-item"><a class="nav-link active" href="#about-cont" data-toggle="tab">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#bottom-tab2" data-toggle="tab">Result</a></li>
-						<li class="nav-item"><a class="nav-link" href="#bottom-tab3" data-toggle="tab">Time table</a></li>
 					</ul>
 
 					<div class="tab-content">
