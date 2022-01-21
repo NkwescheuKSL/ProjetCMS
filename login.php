@@ -1,7 +1,15 @@
 
+<link rel="stylesheet" type="text/css" href="/Projet(system_management)/assets/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="/Projet(system_management)/assets/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="/Projet(system_management)/assets/css/bootstrap-datetimepicker.min.css"/>
+<link rel="stylesheet" type="text/css" href="/Projet(system_management)/assets/css/dataTables.bootstrap4.min.css"/>
+<link rel="stylesheet" type="text/css" href="/Projet(system_management)/assets/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="/Projet(system_management)/assets/css/fullcalendar.min.css"/>
+<link rel="stylesheet" type="text/css" href="/Projet(system_management)/assets/css/select2.min.css"/>
+<link rel="stylesheet" type="text/css" href="/Projet(system_management)/assets/css/tagsinput.css"/>
 <body>
 <center>
-	<h1>ADMIN LOGIN</h1>
+	<h1>ADMIN LOGIN</h1></br></br>
 
 <div id="general">
 	<table align="center">
