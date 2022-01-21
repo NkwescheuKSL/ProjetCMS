@@ -1,4 +1,43 @@
 
+
+<?php 
+					function connecter(){
+						try
+						{
+							$pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
+							$bdd = new PDO('mysql:host=localhost;dbname=school_manage', 'root', '', $pdo_options);
+							//echo "Connexion reussi";
+							$bdd->query("SET NAMES UTF8");
+							return $bdd;
+						}
+						catch (Exception $e)
+						{
+								die('Erreur : ' . $e->getMessage());
+						}
+
+					}
+					
+				function adminLogin($email,$password){
+					$bdd = connecter();
+					$req = $bdd->prepare("SELECT * FROM admin WHERE email = '$email' AND password = '$password' ");
+					$p = $req->execute();
+					$param = $req->fetch();
+					if(!$param)
+					{
+						header("Location:http://localhost/Projet(system_management)/login.php?/");
+						exit();
+					}
+				}
+				
+            if(isset($_POST['email']) and isset($_POST['password'])){
+    
+                $email = $_POST['email'];
+                $password = $_POST['password'];
+				
+				adminLogin($email,$password);
+                
+            }
+            ?>
         <!--  -->
         <?php include"./includes/header.php"?>
         <!--  -->
