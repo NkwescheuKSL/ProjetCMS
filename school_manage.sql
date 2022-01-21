@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 17 jan. 2022 à 17:03
--- Version du serveur : 10.4.19-MariaDB
--- Version de PHP : 8.0.7
+-- Généré le :  jeu. 20 jan. 2022 à 18:01
+-- Version du serveur :  10.1.36-MariaDB
+-- Version de PHP :  5.6.38
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,8 +19,26 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `school_manage`
+-- Base de données :  `school_manage`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `admin`
+--
+
+CREATE TABLE `admin` (
+  `email` varchar(5000) NOT NULL,
+  `password` varchar(5000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `admin`
+--
+
+INSERT INTO `admin` (`email`, `password`) VALUES
+('NTMG@gmail.com', '1234');
 
 -- --------------------------------------------------------
 
