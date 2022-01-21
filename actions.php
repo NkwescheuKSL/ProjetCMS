@@ -68,24 +68,19 @@
                 
             }
             ?>
+			
 			<?php 
-            $teacher = new teacher();
-            $student->id = $get_the_id;
-            if(isset($_POST['modify_teacher'])){
-    
-                $teacher->teacher_name = $_POST['full_name'];
-                $teacher->teacher_birthday = $_POST['birthday'];
-                /*$teacher->teacher_gender = $_POST['gender'];*/
-                $teacher->teacher_city = $_POST['city'];
-                $teacher->teacher_email = $_POST['email'];
-                $teacher->teacher_phone = $_POST['phone'];
-                $teacher->teacher_password = $_POST['password'];
-                $teacher->teacher_speciality= $_POST['speciality'];
-
-                $teacher->update();
+            $admin = new admin();
+            //$admin->id = $get_the_id;
+            if(isset($_POST['login'])){
+                $admin->email = $_POST['email'];
+                $admin->password = $_POST['password'];
+                $admin->passwordLogin($email,$password);
                 
             }
             ?>
+			
+			
 			
 
             <?php 
